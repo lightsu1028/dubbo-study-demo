@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>dubbo-demo-common</module>
+        <module>dubbo-demo-userservice-provider</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.5.RELEASE</version>
+    </parent>
+
+    <groupId>com.lightsu</groupId>
+    <artifactId>dubbo-study-demo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <properties>
+        <lombok.version>1.16.18</lombok.version>
+        <dubbo.version>2.7.5</dubbo.version>
+    </properties>
+    <dependencyManagement>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- Dubbo Spring Boot Starter -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+            </dependency>
+
+            <!-- Apache Dubbo  -->
+            <!--<dependency>-->
+                <!--<groupId>org.apache.dubbo</groupId>-->
+                <!--<artifactId>dubbo-dependencies-bom</artifactId>-->
+                <!--<version>${dubbo.version}</version>-->
+                <!--<type>pom</type>-->
+                <!--<scope>import</scope>-->
+            <!--</dependency>-->
+
+            <!--<dependency>-->
+                <!--<groupId>org.apache.dubbo</groupId>-->
+                <!--<artifactId>dubbo</artifactId>-->
+                <!--<version>${dubbo.version}</version>-->
+                <!--<exclusions>-->
+                    <!--<exclusion>-->
+                        <!--<groupId>org.springframework</groupId>-->
+                        <!--<artifactId>spring</artifactId>-->
+                    <!--</exclusion>-->
+                    <!--<exclusion>-->
+                        <!--<groupId>javax.servlet</groupId>-->
+                        <!--<artifactId>servlet-api</artifactId>-->
+                    <!--</exclusion>-->
+                    <!--<exclusion>-->
+                        <!--<groupId>log4j</groupId>-->
+                        <!--<artifactId>log4j</artifactId>-->
+                    <!--</exclusion>-->
+                <!--</exclusions>-->
+            <!--</dependency>-->
+
+        </dependencies>
+
+    </dependencyManagement>
+    <!--<dependencies>-->
+        <!--&lt;!&ndash; Dubbo Spring Boot Starter &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.dubbo</groupId>-->
+            <!--<artifactId>dubbo-spring-boot-starter</artifactId>-->
+            <!--<version>2.7.5</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.dubbo</groupId>-->
+            <!--<artifactId>dubbo</artifactId>-->
+        <!--</dependency>-->
+    <!--</dependencies>-->
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>apache.snapshots.https</id>-->
+            <!--<name>Apache Development Snapshot Repository</name>-->
+            <!--<url>https://repository.apache.org/content/repositories/snapshots</url>-->
+            <!--<releases>-->
+                <!--<enabled>false</enabled>-->
+            <!--</releases>-->
+            <!--<snapshots>-->
+                <!--<enabled>true</enabled>-->
+            <!--</snapshots>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+</project>
