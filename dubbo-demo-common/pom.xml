@@ -12,10 +12,15 @@
     <artifactId>dubbo-demo-common</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
-        </dependency>
+        </dependency><dependency>
+        <groupId>org.apache.dubbo</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>2.7.5</version>
+    </dependency>
     </dependencies>
 </project>
